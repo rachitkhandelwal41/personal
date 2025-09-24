@@ -1,8 +1,9 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'contact',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './contact.html',
   styleUrl: './contact.css'
 })

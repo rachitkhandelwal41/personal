@@ -10,7 +10,7 @@ import { Projects } from './components/projects/projects';
 import { Contact } from './components/contact/contact';
 @Component({
   selector: 'app-root',
-  imports: [Nav,About,Hero,Experience,Projects,Contact],
+  imports: [Nav,About,Hero,Experience,Projects,Contact,],
   templateUrl: './app.html',
   styleUrl: './app.css',
   
