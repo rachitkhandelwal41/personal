@@ -1,0 +1,95 @@
+<section id="about" class="pt-30 px-6 ">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid lg:grid-cols-3 gap-12 items-start">
+      <!-- Profile and Quick Info -->
+      <div class="lg:col-span-1 flex flex-col items-center lg:items-start">
+        <div class="mb-8">
+          <img
+            src="/assets/heropic.png"
+            alt="Professional headshot"
+            class="w-72 h-72 rounded-2xl px-2 py-2 object-cover shadow-2xl  hover:border border-[#01B189] transition"
+          />
+        </div>
+
+        <div class="w-full  mb-8 ">
+          <div class="grid grid-cols-2 gap-4 text-center mr-12">
+            <div class="p-4 rounded-xl bg-card/50">
+              <div class="text-2xl font-bold text-[#00ba90]">0.5+</div>
+              <div class="text-sm text-muted-foreground">Years Experience</div>
+            </div>
+            <div class="p-4 rounded-xl bg-card/50 ">
+              <div class="text-2xl font-bold text-orange-500">3+</div>
+              <div class="text-sm text-muted-foreground">Projects Completed</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technologies -->
+        <div class="w-full">
+          <h3 class="text-xl font-bold text-foreground mb-6 ml-5 text-center lg:text-left">Tech Stack</h3>
+          <div class="grid grid-cols-2 gap-3">
+            <div
+              *ngFor="let tech of techStack"
+              class="flex items-center gap-3 p-3 rounded-lg bg-card/30 hover:bg-[#00ba90] border border-transparent hover:border-[#00ba90] transition-all duration-200"
+            >
+              <span class="text-lg" [ngClass]="tech.color">{{ tech.icon }}</span>
+              <span class="text-sm font-medium text-foreground">{{ tech.name }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="lg:col-span-2">
+        <div class="mb-8">
+          <h2 class="text-4xl font-bold text-foreground mb-4">About Me</h2>
+          <div class="w-32 h-1 bg-gradient-to-r from-orange-500 via-white to-[#00ba90] rounded-full"></div>
+        </div>
+
+        <div class="space-y-6 text-muted-foreground leading-relaxed">
+          <div class="text-lg space-y-4">
+            <p>
+              I'm a passionate <span class="text-[#00ba90] font-semibold">Associate Software Developer</span> at
+              <span class="text-orange-500 font-semibold">Biz2x</span>,where I work on providing lending solutions to banks through scalable web applications that serve millions of users worldwide. I completed my B.Tech in
+              <span class="text-[#00ba90] font-semibold">
+              Information Technology </span>from <span class="text-orange-500 font-semibold">Galgotia's College of Engineering and Technology </span> and, as a fresher, have nurtured a strong curiosity for technology by building several projects to sharpen my skills. Though I’m just starting out professionally, I’m eager to learn and grow, confident that my determination and commitment will help me bridge the gap in experience and contribute meaningfully to my team.
+            </p>
+
+            
+          </div>
+
+          <div class="rounded-xl bg-card/30">
+            <h4 class="text-foreground font-semibold mb-3 flex items-center ">
+              <span class="text-orange-500"></span> My Philosophy
+            </h4>
+            <p class="text-sm">
+              I believe in writing clean, maintainable code that adapts to tomorrow's challenges. Every line of code
+              should tell a story, and every feature should enhance the user's journey.
+            </p>
+          </div>
+
+          <!-- Enhanced Key Strengths -->
+          <div class="pt-6">
+            <h4 class="text-foreground font-semibold mb-4 flex items-center gap-2">
+              <span class="text-green-500"></span> Core Expertise
+            </h4>
+            <div class="grid grid-cols-2 gap-3">
+              <span
+                *ngFor="let skill of skills"
+                class="px-4 py-2 text-sm bg-green-100 text-green-700 rounded-lg border border-green-200 font-medium hover:bg-[#00ba90] hover:border-[#00ba90] hover:text-black transition-colors"
+              >
+                {{ skill }}
+              </span>
+            </div>
+          </div>
+
+          <div class="pt-4">
+            <p class="text-sm">
+             When I'm not coding, you'll find me playing cricket, hiking trails, or exploring new places.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
