@@ -23,10 +23,10 @@
 </div>
 
 
-<div *ngIf="isMenuOpen" class="md:hidden bg-black px-8 py-4 space-y-4">
-  <a (click)="isMenuOpen = false" class="block hover:text-[#00ba90]" href="#about">About</a>
-  <a (click)="isMenuOpen = false" class="block hover:text-[#00ba90]" href="#hero">Details</a>
-  <a (click)="isMenuOpen = false" class="block hover:text-[#00ba90]" href="#experience">Experience</a>
-  <a (click)="isMenuOpen = false" class="block hover:text-[#00ba90]" href="#projects">Projects</a>
-  <a (click)="isMenuOpen = false" class="block hover:text-[#00ba90]" href="#contact">Contact</a>
+<div *ngIf="isMenuOpen" class="md:hidden bg-black px-8 py-4 space-y-4 fixed top-16 left-0 w-full z-50">
+  <a href="#about" (click)="navigateToSection($event, 'about')" class="block hover:text-[#00ba90]">About</a>
+  <a href="#hero" (click)="navigateToSection($event, 'hero')" class="block hover:text-[#00ba90]">Details</a>
+  <a href="#experience" (click)="navigateToSection($event, 'experience')" class="block hover:text-[#00ba90]">Experience</a>
+  <a href="#projects" (click)="navigateToSection($event, 'projects')" class="block hover:text-[#00ba90]">Projects</a>
+  <a href="#contact" (click)="navigateToSection($event, 'contact')" class="block hover:text-[#00ba90]">Contact</a>
 </div>
